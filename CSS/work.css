@@ -1,0 +1,138 @@
+/* general type and html*/
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 24pt;
+    text-align: center;
+    padding-top: 60px;;
+}
+
+h2 {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 18pt;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 12pt;
+    text-align: center;
+    color: #030720;
+    border: none;
+}
+/* Body Starts Here*/
+
+nav {
+    width: 100%;
+    background-color: #030720;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 18pt;
+    color: #ffffff;
+}
+/*Specific Nav Components*/
+.home {
+    color: #fa8858;
+}
+
+.about-me {
+    color: #FDCD77;
+}
+.my-work {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.contact-me {
+    color: #D7F2D6;
+}
+
+#logo {
+    padding-top: 5px;
+}
+
+/* Main Content starts here*/
+
+/*Grid*/
+
+#workGrid {
+    margin: 0px 100px 0px 100px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10px;
+    grid-template-areas:  
+        "hudMock hudInfo"
+        "victualInfo victualMock"
+        "foodMock foodInfo";
+}
+#hudMock {
+    grid-area: hudMock;
+}
+#hudInfo {
+    grid-area: hudInfo;
+}
+
+#victualInfo {
+    grid-area: victualInfo;
+}
+#victualMock {
+    grid-area: victualMock;
+}
+
+#foodMock {
+    grid-area: foodMock;
+}
+#foodInfo {
+    grid-area: foodInfo;
+}
+
+
+/*Basic Info*/
+    
+
+
+.csInfo {
+    display: flex;
+    background-color: #030720;
+    color: #D7F2D6;
+    text-align: center;
+    height: 300px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#csButtonOrange {
+    background-color: #fa8858;
+}
+
+#csButtonYellow {
+    background-color: #FDCD77;  
+}
+
+#csButtonGreen {
+    background-color: #D7F2D6;
+}
+
+.csTitle {
+    color: #fa8858;
+}
+
+
+
+
