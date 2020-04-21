@@ -27,6 +27,7 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 button {
     width: 200px;
     height: 50px;
@@ -346,7 +347,7 @@ img {
     #otherPics {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
     .top {
         width: 100%;
