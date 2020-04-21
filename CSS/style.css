@@ -71,6 +71,10 @@ nav {
     padding-top: 5px;
 }
 
+.currantPage {
+    color: #ffffff;
+    text-decoration: underline;
+}
 
 /* Homepage section begins*/
 
@@ -155,17 +159,28 @@ section {
 
 /*My Work Page CSS*/
 
+.csInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #030720;
+    color: #D7F2D6;
+    text-align: center;
+    height: 300px;
+}
 /*Grid*/
 
-#workGrid {
-    margin: 0px 100px 0px 100px;
+/*#workGrid {
+    margin: 0px 5% 0px 5%;
     display: grid;
-    grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    border: 5px solid #030720;
     grid-template-areas:  
         "hudMock hudInfo"
         "victualInfo victualMock"
-        "foodMock foodInfo";
+        "foodMock foodInfo" ;
 }
 #hudMock {
     grid-area: hudMock;
@@ -189,23 +204,41 @@ section {
 }
 #foodInfo {
     grid-area: foodInfo;
+}*/
+
+#workOne {
+    margin: 0 5% 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#workTwo {
+    margin: 0 5% 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#workThree {
+    margin: 0 5% 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#hudMock {
+    text-align: center;
+}
+#victualMock {
+    text-align: center;
+}
+#foodMock {
+    text-align: center;
 }
 
 
-/*Basic Info*/
-    
 
-
-.csInfo {
-    display: flex;
-    background-color: #030720;
-    color: #D7F2D6;
-    text-align: center;
-    height: 300px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-} 
+/*Case Study Button Info*/
 
 #csButtonOrange {
     background-color: #fa8858;
