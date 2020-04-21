@@ -11,10 +11,30 @@ h1 {
     padding-top: 60px;;
 }
 
+.pageTitle {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+
 h2 {
     font-family: 'Baloo Da 2', cursive;
     font-size: 18pt;
     text-align: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 12pt;
+    text-align: center;
+    color: #030720;
+    border: none;
 }
 
 /* Body Starts Here*/
@@ -52,7 +72,7 @@ nav {
 }
 
 
-/* Main section begins*/
+/* Homepage section begins*/
 
 #hero {
     float: left;
@@ -73,6 +93,137 @@ nav {
 section {
     background-image: linear-gradient(to right,#FA8858,#FDCD77,#D7F2D6);
 }
+
+/* About Me Page CSS*/
+
+#aboutMe {
+    display: flex;
+    justify-content: start;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+#mainAbout {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+#Hi {
+    color: #fa8858;
+    text-align: left;
+}
+
+#mainPara {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+#otherAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 300px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+
+.otherInterests {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 18pt;
+    color: #fa8858;
+    background:none ;
+}
+
+#otherPics {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.top {
+    margin-bottom: 50px;
+}
+
+.bottom {
+    margin-top: 50px;
+}
+
+/*My Work Page CSS*/
+
+/*Grid*/
+
+#workGrid {
+    margin: 0px 100px 0px 100px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:  
+        "hudMock hudInfo"
+        "victualInfo victualMock"
+        "foodMock foodInfo";
+}
+#hudMock {
+    grid-area: hudMock;
+    text-align: center;
+}
+#hudInfo {
+    grid-area: hudInfo;
+}
+
+#victualInfo {
+    grid-area: victualInfo;
+}
+#victualMock {
+    grid-area: victualMock;
+    text-align: center;
+}
+
+#foodMock {
+    grid-area: foodMock;
+    text-align: center;
+}
+#foodInfo {
+    grid-area: foodInfo;
+}
+
+
+/*Basic Info*/
+    
+
+
+.csInfo {
+    display: flex;
+    background-color: #030720;
+    color: #D7F2D6;
+    text-align: center;
+    height: 300px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#csButtonOrange {
+    background-color: #fa8858;
+}
+
+#csButtonYellow {
+    background-color: #FDCD77;  
+}
+
+#csButtonGreen {
+    background-color: #D7F2D6;
+}
+
+.csTitle {
+    color: #fa8858;
+}
+
+
 
 /*Footer Starts here*/
 

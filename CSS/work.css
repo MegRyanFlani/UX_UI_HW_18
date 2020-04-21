@@ -11,6 +11,12 @@ h1 {
     padding-top: 60px;;
 }
 
+.pageTitle {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+
 h2 {
     font-family: 'Baloo Da 2', cursive;
     font-size: 18pt;
@@ -73,8 +79,7 @@ nav {
     margin: 0px 100px 0px 100px;
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto;
-    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:  
         "hudMock hudInfo"
         "victualInfo victualMock"
