@@ -177,15 +177,15 @@ section {
 /*Grid*/
 
 #workGrid {
-    margin: 0px 5% 0px 5%;
+    margin: 0px 8% 5% 8%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    border: 5px solid #030720;
+    row-gap: 10px;
     grid-template-areas:  
-        "hudMock hudInfo"
-        "victualInfo victualMock"
-        "foodMock foodInfo";
+    "hudMock hudInfo hudInfo"
+    "victualInfo victualInfo victualMock"
+    "foodMock foodInfo foodInfo";
 }
 #hudMock {
     grid-area: hudMock;
@@ -299,6 +299,7 @@ img {
 
 @media only screen and (max-width:600px) {
 
+    /* Responsive ABOUT PAGE*/
     #mainAbout {
         display: flex;
         width: 100%;
@@ -334,5 +335,22 @@ img {
         width: 100%;
         height: auto;
         margin: 0px;
+    }
+
+    /*Responsive WORK PAGE*/
+
+    #workGrid {
+        margin: 0 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+            "hudMock"
+            "hudInfo"
+            "victualMock"
+            "victualInfo"
+            "foodMock"
+            "foodInfo";
+
     }
 }
