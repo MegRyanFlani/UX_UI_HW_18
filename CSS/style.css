@@ -59,6 +59,7 @@ nav {
 
 .about-me {
     color: #FA8858;
+    text-decoration: none;
 }
 .my-work {
     color: #FDCD77;
@@ -110,9 +111,9 @@ section {
 #mainAbout {
     display: flex;
     justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
 }
 
 #Hi {
@@ -126,14 +127,18 @@ section {
     padding-left: 20px;
 }
 
+#mainImage {
+    float: left;
+}
+
 #otherAbout {
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    margin-left: 300px;
-    margin-right: 200px;
-    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1%;
 }
 
 .otherInterests {
@@ -171,7 +176,7 @@ section {
 }
 /*Grid*/
 
-/*#workGrid {
+#workGrid {
     margin: 0px 5% 0px 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -180,7 +185,7 @@ section {
     grid-template-areas:  
         "hudMock hudInfo"
         "victualInfo victualMock"
-        "foodMock foodInfo" ;
+        "foodMock foodInfo";
 }
 #hudMock {
     grid-area: hudMock;
@@ -204,8 +209,10 @@ section {
 }
 #foodInfo {
     grid-area: foodInfo;
-}*/
+}
 
+
+/*
 #workOne {
     margin: 0 5% 0 5%;
     display: grid;
@@ -235,7 +242,7 @@ section {
 #foodMock {
     text-align: center;
 }
-
+*/
 
 
 /*Case Study Button Info*/
@@ -288,4 +295,44 @@ p {
 }
 img {
     padding-right: 10px;
+}
+
+@media only screen and (max-width:600px) {
+
+    #mainAbout {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: left;
+        margin: 0px;
+    }
+
+    #mainImage {
+        width: 100%;
+        height: auto;
+    }
+
+    #otherAbout {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    #otherPics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .bottom {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
 }
