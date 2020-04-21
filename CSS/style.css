@@ -86,16 +86,25 @@ nav {
 
 /* Homepage section begins*/
 
+#homeFront {
+    margin:0px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "hero hi";
+}
 #hero {
     float: left;
     margin-left: 10%;
     padding: 20px;
     border-radius: 15px ;   
+    grid-area: hero;
 }
 
 #hi {
-    float: left;
-    padding-left: 80px;
+    margin-right: 10%;
+    grid-area: hi;
 }
 
 #graphic {
@@ -317,7 +326,30 @@ img {
         align-items: center;
     }
 
+    #homeFront {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "hero"
+        "hi";
+    }
+    #hero {
+        padding-left: 0px;
+        margin: 0 25% 0 25%;
+        width: 50%;
+        height: auto;
+    }
+    #hi {
+        margin: -10px;
+        text-align: center;
+    }
+
+    
   }
+
+
 
 @media only screen and (max-width:600px) {
 
