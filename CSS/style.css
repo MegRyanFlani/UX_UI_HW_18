@@ -47,6 +47,10 @@ nav {
     align-items: center;
 }
 
+.icons {
+    display: none;
+}
+
 .nav-item {
     font-family: 'Baloo Da 2', cursive;
     font-size: 18pt;
@@ -55,6 +59,7 @@ nav {
 /*Specific Nav Components*/
 .home {
     color: #ffffff;
+    text-decoration: none;
 }
 
 .about-me {
@@ -63,6 +68,7 @@ nav {
 }
 .my-work {
     color: #FDCD77;
+    text-decoration: none;
 }
 .contact-me {
     color: #D7F2D6;
@@ -81,7 +87,7 @@ nav {
 
 #hero {
     float: left;
-    margin-left: 160px;
+    margin-left: 10%;
     padding: 20px;
     border-radius: 15px ;   
 }
@@ -296,9 +302,26 @@ p {
 img {
     padding-right: 10px;
 }
+/*Responsive NAV*/
+
+@media only screen and (max-width: 900px) {
+    
+    .nav-item {
+      display: none;
+    }
+    .icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  }
 
 @media only screen and (max-width:600px) {
 
+
+    
     /* Responsive ABOUT PAGE*/
     #mainAbout {
         display: flex;
@@ -354,3 +377,6 @@ img {
 
     }
 }
+
+/*Responsive FOOTER*/
+
