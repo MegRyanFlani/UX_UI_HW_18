@@ -84,6 +84,11 @@ nav {
     text-decoration: underline;
 }
 
+.nav-title:hover {
+    font-size: 28px;
+}
+
+
 /* Homepage section begins*/
 
 #homeFront {
