@@ -88,6 +88,9 @@ nav {
     font-size: 28px;
 }
 
+.icon-title:hover {
+    height: 60px;
+}
 
 /* Homepage section begins*/
 
@@ -335,20 +338,21 @@ img {
         margin: 0px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 
         "hero"
         "hi";
     }
     #hero {
         padding-left: 0px;
-        margin: 0 25% 0 25%;
-        width: 50%;
+        margin: 0 10% 0 10%;
+        width: 80%;
         height: auto;
     }
     #hi {
         margin: -10px;
         text-align: center;
+        
     }
 
     
@@ -370,8 +374,9 @@ img {
     }
 
     #mainImage {
-        width: 100%;
+        width: 80%;
         height: auto;
+        margin-left: 10%;
     }
 
     #otherAbout {
@@ -387,21 +392,23 @@ img {
         justify-content: center;
     }
     .top {
-        width: 100%;
+        width: 80%;
         height: auto;
+        margin-left: 10%;
         margin-bottom: 5px;
         margin-top: 5px;
     }
     .bottom {
-        width: 100%;
+        width: 80%;
         height: auto;
-        margin: 0px;
+        margin-left: 10%;
     }
 
     /*Responsive WORK PAGE*/
 
     #workGrid {
         margin: 0 5%;
+        margin-bottom: 20px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto;
@@ -414,6 +421,8 @@ img {
             "foodInfo";
 
     }
+
+
 }
 
 /*Responsive FOOTER*/
